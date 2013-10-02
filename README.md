@@ -6,21 +6,20 @@ Your task is to modify the Android+OpenCV code hosted on Github to implement an 
 
 1. Take an image of your face and crop it to be similar to "myface.jpg" as shown in `res/drawable/myface.jpg`
 
-2. Import the project above into Eclipse (if you are on Mac, you will have delete the ".cmd" again to get it to build correctly [Right Click Project>Properties> C/C++ Build> Build Command])
+2. Import the project above into Eclipse (if you are on Mac, you will have delete the ".cmd" again to get it to build correctly after import [Right Click Project>Properties> C/C++ Build> Build Command])
 
 3. Change the path of the file Android.mk inside the jni folder to match the location of your OpenCV path
 	ex: it will be ( ../../sdk/native/jni/OpenCV.mk ), change it to the folder path in your computer that contains the file OpenCV.mk 
-				or
-		you can copy the project at the same locations of the openCV samples. 
+				
 
 4. Verify that the OpenCV reference is correct 
 	- Right click the project-> proprieties -> Android -> Library 
-	- If this is wrong, remove the reference and add the right library (your library)
+	- If this is wrong, remove the reference and add the right OpenCV library
 		
 5. Add your code in between the comments (HomeWorkChanges) inside the `onCameraFrame` function in the `FdActivity` class.
-	- try to use the functions in OpenCV. Almost all steps can be executed using OpenCV functionality.
+	- You will use primarily OpenCV functionality here. 
 	
->IMPORTANT: This app will ONLY work when you hold the phone in landscape mode. This is because of how it is trying to recognize face in an absolute manner.
+>IMPORTANT: This app will ONLY work when you hold the phone in landscape mode. This is because of how it is trying to recognize faces in an absolute manner.
 >Specifically, if you hold the phone in portrait mode, it sees :) instead of '__' and thus does not recognize a face.
 
 >NOTE: This app does very very basic face recognition and will not always work accurately. However, you will notice dramatic improvements if you stay in a similar 
@@ -41,6 +40,6 @@ Extra Credit (+10pts)
 
 Submission
 ==========
-MIT/Skoltech Students: Please upload your .apk file and your myface.jpg file to the Stellar site. I will try the app out on your myface.jpg file against other sample face images I also have (displaying on a computer monitor).
+MIT/Skoltech Students: Please upload your .apk file and your myface.jpg file to the Stellar site. I will try your app out on your myface.jpg and against other student face images (displaying on a computer monitor).
 
 Online Students: Upload your .apk to the Google Play Store and show off what you've built with some screenshots on the Facebook page!
