@@ -20,8 +20,11 @@ Your task is to modify the Android+OpenCV code hosted on Github to implement an 
 5. Add your code in between the comments (HomeWorkChanges) inside the `onCameraFrame` function in the `FdActivity` class.
 	- try to use the functions in OpenCV. Almost all steps can be executed using OpenCV functionality.
 	
->IMPORTANT: This program will ONLY work when you hold the phone in landscape mode. This is because of how it is trying to recognize face in an absolute manner.
+>IMPORTANT: This app will ONLY work when you hold the phone in landscape mode. This is because of how it is trying to recognize face in an absolute manner.
 >Specifically, if you hold the phone in portrait mode, it sees :) instead of '__' and thus does not recognize a face.
+
+>NOTE: This app does very very basic face recognition and will not always work accurately. However, you will notice dramatic improvements if you stay in a similar 
+>environment to your myface.jpg picture and tweak the threshold coefficient. 
  
 TIPS
 ====
@@ -36,3 +39,8 @@ Extra Credit (+10pts)
 ====================
 - search/propose and create a method to get a more general face recognition algorithm to recognize your face in different conditions.  
 
+Submission
+==========
+MIT/Skoltech Students: Please upload your .apk file and your myface.jpg file to the Stellar site. I will try the app out on your myface.jpg file against other sample face images I also have (displaying on a computer monitor).
+
+Online Students: Upload your .apk to the Google Play Store and show off what you've built with some screenshots on the Facebook page!
