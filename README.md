@@ -1,4 +1,34 @@
-FaceRecognition
+FaceRecognition (HW4)
 ===============
+You should now have the code up and to do simple 
+Modify the Android+OpenCV code hosted on Github to implement an app to distinctly recognize your specific face as compared to other faces. That is, instead of simply recognizing a face, the app will idenitfy your face and draw a red rectangle around it instead of a green rectangle.
 
-Try to implement a app to recognize your face
+1. Take an image of your face and crop it to be similar to "myface.jpg" as shown in res/drawable/myface.jpg
+
+2. Import the project above into Eclipse (if you are on Mac, you will have delete the ".cmd" again to get it to build correctly [Right Click Project>Properties> C/C++ Build> Build Command])
+
+3. Change the path of the file Android.mk inside the jni folder to match the location of your OpenCV path
+	ex: it will be ( ../../sdk/native/jni/OpenCV.mk ), change it to the folder path in your computer that contains the file OpenCV.mk 
+				or
+		you can copy the project at the same locations of the openCV samples. 
+
+4. Verify that the OpenCV reference is correct 
+	- Right click the project-> proprieties -> Android -> Library 
+	- If this is wrong, remove the reference and add the right library (your library)
+		
+5. Add the code in between the comments (HomeWorkChanges) inside the onFrame function at the FdActivity class.
+	- try to use the functions inside OpenCV. Almost all steps can be executed using OpenCV functionalities 
+ 
+TIPS
+====
+
+- Use the image that you took of your face to debug. Show the image you created (myface.jpg) on your computer monitor and try to detect the face from within your app 
+  - We're doing this because of the nature of this solution to face recognition. Here, the results can vary according your facial expression, lighting conditions etc. Thus, testing it on this image should eliminate those factors.
+		
+- If you already have the face-detection sample of OpenCV installed and the launch on the device is not succeeding because of conflicts, try deleting the sample face-recognition app from your phone.  	
+		
+
+Extra Credit (+10pts)
+====================
+- search/propose and create a method to get a more general face recognition algorithm to recognize your face in different conditions.  
+
