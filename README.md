@@ -4,7 +4,7 @@ You should now be set up to run OpenCV on Android. Remember to install OpenCV Ma
 
 Your task is to modify the Android+OpenCV code hosted on Github to implement an app to distinctly recognize your specific face as compared to other faces. That is, instead of simply recognizing a face, the app will idenitfy your face and draw a red rectangle around it instead of a green rectangle.
 
-1. Take an image of your face and crop it to be similar to "myface.jpg" as shown in res/drawable/myface.jpg
+1. Take an image of your face and crop it to be similar to "myface.jpg" as shown in `res/drawable/myface.jpg`
 
 2. Import the project above into Eclipse (if you are on Mac, you will have delete the ".cmd" again to get it to build correctly [Right Click Project>Properties> C/C++ Build> Build Command])
 
@@ -17,7 +17,7 @@ Your task is to modify the Android+OpenCV code hosted on Github to implement an 
 	- Right click the project-> proprieties -> Android -> Library 
 	- If this is wrong, remove the reference and add the right library (your library)
 		
-5. Add your code in between the comments (HomeWorkChanges) inside the onFrame function in the FdActivity class.
+5. Add your code in between the comments (HomeWorkChanges) inside the `onCameraFrame` function in the `FdActivity` class.
 	- try to use the functions in OpenCV. Almost all steps can be executed using OpenCV functionality.
  
 TIPS
