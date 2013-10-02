@@ -19,6 +19,9 @@ Your task is to modify the Android+OpenCV code hosted on Github to implement an 
 		
 5. Add your code in between the comments (HomeWorkChanges) inside the `onCameraFrame` function in the `FdActivity` class.
 	- try to use the functions in OpenCV. Almost all steps can be executed using OpenCV functionality.
+	
+>IMPORTANT: This program will ONLY work when you hold the phone in landscape mode. This is because of how it is trying to recognize face in an absolute manner.
+>Specifically, if you hold the phone in portrait mode, it sees :) instead of '__' and thus does not recognize a face.
  
 TIPS
 ====
